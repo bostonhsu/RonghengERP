@@ -12,3 +12,11 @@ d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\bin\Debug
 d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.application
 d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.exe.manifest
 d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.application
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe.config
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.exe
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.pdb
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.csprojResolveAssemblyReference.cache
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.main.resources
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.Properties.Resources.resources
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.SubForm1.resources
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.csproj.GenerateResource.Cache
