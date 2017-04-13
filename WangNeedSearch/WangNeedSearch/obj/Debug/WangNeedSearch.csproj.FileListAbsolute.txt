@@ -1,0 +1,14 @@
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe.config
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.pdb
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.csprojResolveAssemblyReference.cache
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.main.resources
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.Properties.Resources.resources
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.csproj.GenerateResource.Cache
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.exe
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.pdb
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.SubForm1.resources
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe.manifest
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.application
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.exe.manifest
+d:\Documents\Visual Studio 2015\Projects\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.application
