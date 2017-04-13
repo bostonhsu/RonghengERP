@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WangNeedSearch.exe" size="22448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WangNeedSearch.exe" size="23512">
       <assemblyIdentity name="WangNeedSearch" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>L756AxVtucSO4GYLFhKTYQ7Hog8=</dsig:DigestValue>
+        <dsig:DigestValue>Btl9ap0BVzGJnPnGBGalRNPoIi8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

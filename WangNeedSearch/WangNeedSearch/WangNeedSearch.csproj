@@ -91,6 +91,12 @@
     <Compile Include="SubForm1.Designer.cs">
       <DependentUpon>SubForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm2.Designer.cs">
+      <DependentUpon>SubForm2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="SubForm1.resx">
       <DependentUpon>SubForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm2.resx">
+      <DependentUpon>SubForm2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

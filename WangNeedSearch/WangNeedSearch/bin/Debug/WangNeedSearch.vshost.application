@@ -8,7 +8,7 @@
         <beforeApplicationStartup />
       </update>
     </subscription>
-    <deploymentProvider codebase="file://erp/%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6/BostonHsu/WangNeedSearch.application" />
+    <deploymentProvider codebase="file://192.168.1.3/%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6/BostonHsu/WangNeedSearch.application" />
   </deployment>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="WangNeedSearch.exe.manifest" size="3421">
@@ -18,7 +18,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>TYgYEIh6ScfSc7l2kGEEvH36mOA=</dsig:DigestValue>
+        <dsig:DigestValue>hizmpxMOSknsbXK9+qB2J6R0lws=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

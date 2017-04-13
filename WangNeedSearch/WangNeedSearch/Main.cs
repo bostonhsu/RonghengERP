@@ -62,6 +62,15 @@ namespace WangNeedSearch
             childForms.Add(subForm1);
         }
 
+        private void AddSubForm2ToList()
+        {
+            SubForm2 subForm2 = new SubForm2();
+            subForm2.TopLevel = false;
+            panel1.Controls.Add(subForm2);
+            subForm2.Show();
+            childForms.Add(subForm2);
+        }
+
         private void main_FormClosing(object sender, FormClosingEventArgs e)
         {
             foreach (var childForm in childForms)
@@ -72,7 +81,31 @@ namespace WangNeedSearch
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            bool isExistFlag = false;
+            if (childForms.Count > 0)
+            {
+                foreach (var childForm in childForms)
+                {
+                    if (childForm is SubForm2)
+                    {
+                        isExistFlag = true;
+                        childForm.Visible = true;
+                    }
+                    else
+                    {
+                        childForm.Visible = false;
+                    }
+                }
+                if (!isExistFlag)
+                {
+                    AddSubForm2ToList();
+                }
+            }
+            else
+            {
+                AddSubForm2ToList();
+            }
+            RefreshLblCount();
         }
     }
 }

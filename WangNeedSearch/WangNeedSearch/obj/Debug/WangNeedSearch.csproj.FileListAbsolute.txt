@@ -20,3 +20,18 @@ C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\o
 C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.Properties.Resources.resources
 C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.SubForm1.resources
 C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe.config
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.exe
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.pdb
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe.manifest
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.application
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.pdb
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.main.resources
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.SubForm1.resources
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.exe.manifest
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.application
+C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.SubForm2.resources
