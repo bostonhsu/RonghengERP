@@ -35,3 +35,10 @@ C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearc
 C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.exe.manifest
 C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.application
 C:\Users\Administrator\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.SubForm2.resources
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe.manifest
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.application
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.pdb
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.SubForm2.resources
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.exe.manifest
+C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.application

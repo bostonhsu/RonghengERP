@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <assemblyIdentity name="WangNeedSearch.application" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <assemblyIdentity name="WangNeedSearch.application" version="1.0.0.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="WangNeedSearch" asmv2:product="WangNeedSearch" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true">
     <subscription>
@@ -11,14 +11,14 @@
     <deploymentProvider codebase="file://192.168.1.3/%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6/BostonHsu/WangNeedSearch.application" />
   </deployment>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="WangNeedSearch.exe.manifest" size="3421">
-      <assemblyIdentity name="WangNeedSearch.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+    <dependentAssembly dependencyType="install" codebase="WangNeedSearch.exe.manifest" size="3456">
+      <assemblyIdentity name="WangNeedSearch.exe" version="1.0.0.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>cyDGjWjKcWxa1AgoAX9pb9cDVcA=</dsig:DigestValue>
+        <dsig:DigestValue>XhILA4MsuRnuBEm/xHM/kZne9JI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
