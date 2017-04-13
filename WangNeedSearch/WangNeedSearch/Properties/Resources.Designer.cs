@@ -68,5 +68,14 @@ namespace WangNeedSearch.Properties {
                 return ResourceManager.GetString("SubForm1_GetKCRH_", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查找类似 没有找到或者订单号为空！ 的本地化字符串。
+        /// </summary>
+        internal static string SubForm2_ShowLabelWarnning_ {
+            get {
+                return ResourceManager.GetString("SubForm2_ShowLabelWarnning_", resourceCulture);
+            }
+        }
     }
 }

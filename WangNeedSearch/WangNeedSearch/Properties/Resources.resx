@@ -117,4 +117,7 @@
   <data name="SubForm1_GetKCRH_" xml:space="preserve">
     <value>查询失败！</value>
   </data>
+  <data name="SubForm2_ShowLabelWarnning_" xml:space="preserve">
+    <value>没有找到或者订单号为空！</value>
+  </data>
 </root>
