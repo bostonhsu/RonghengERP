@@ -42,3 +42,18 @@ C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\b
 C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.SubForm2.resources
 C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.exe.manifest
 C:\Users\Boston Hsu\Documents\GitHub\RonghengERP\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.application
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe.config
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe.manifest
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.application
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.exe
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\bin\Debug\WangNeedSearch.pdb
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.csprojResolveAssemblyReference.cache
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.main.resources
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.Properties.Resources.resources
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.SubForm1.resources
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.SubForm2.resources
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.csproj.GenerateResource.Cache
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.exe.manifest
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.application
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.exe
+\\erp\共享文件\BostonHsu\WangNeedSearch\WangNeedSearch\obj\Debug\WangNeedSearch.pdb

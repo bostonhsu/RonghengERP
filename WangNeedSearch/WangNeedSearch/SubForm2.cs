@@ -515,5 +515,43 @@ namespace WangNeedSearch
                 Search();
             }
         }
+
+        private void trvOrderDetail_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            txtZC.Text = GetZC(trvOrderDetail.SelectedNode.Text);
+
+        }
+
+        private string GetZC(string tuHao)
+        {
+            string ret = null;
+            try
+            {
+                //string SQL = "SELECT MOCTA.TA001, MOCTA.TA002, MOCTA.TA015, MOCTA.TA017, MOCTA.TA021, MOCTA.TA026, MOCTA.TA027, COPMA.MA002 FROM RHLX.dbo.MOCTA LEFT OUTER JOIN RHLX.dbo.COPTC ON MOCTA.TA026 = COPTC.TC001 AND MOCTA.TA027 = COPTC.TC002 LEFT OUTER JOIN RHLX.dbo.COPMA ON COPTC.TC004 = COPMA.MA001 WHERE (MOCTA.TA011 <> 'Y') AND (MOCTA.TA011 <> 'y') AND (MOCTA.TA006 = '" + tuHao + "')";
+                //SQL = "SELECT SUM(MOCTA.TA015) AS SUMTA, SUM(MOCTA.TA017) AS SUMTB FROM MOCTA LEFT OUTER JOIN COPTC ON MOCTA.TA026 = COPTC.TC001 AND MOCTA.TA027 = COPTC.TC002 LEFT OUTER JOIN COPMA ON COPTC.TC004 = COPMA.MA001 WHERE (MOCTA.TA011 <> 'Y') AND (MOCTA.TA011 <> 'y') AND (MOCTA.TA006 = '" + tuHao + "')";
+                string SQL = "SELECT SUM(MOCTA.TA015) AS SUMTA, SUM(MOCTA.TA017) AS SUMTB FROM RHLX.dbo.MOCTA LEFT OUTER JOIN RHLX.dbo.COPTC ON (MOCTA.TA026 = COPTC.TC001 AND MOCTA.TA027 = COPTC.TC002) LEFT OUTER JOIN RHLX.dbo.COPMA ON COPTC.TC004 = COPMA.MA001 WHERE (MOCTA.TA011 <> 'Y') AND (MOCTA.TA011 <> 'y') AND (MOCTA.TA006 = '" + tuHao + "')";
+                SqlDataAdapter objDataAdpter = new SqlDataAdapter();
+                objDataAdpter.SelectCommand = new SqlCommand(SQL, _sqlConnection);
+                DataSet ds = new DataSet();
+                objDataAdpter.Fill(ds, "temp");
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    double sums;
+                    double factor;
+                    sums = Double.Parse(ds.Tables[0].Rows[0][0].ToString());
+                    factor = Double.Parse(ds.Tables[0].Rows[0][1].ToString());
+                    sums = sums - factor;
+                    ret = sums.ToString();
+                }
+                else
+                {
+                    ret = "0.0";
+                }
+            }
+            catch (Exception ee)
+            {
+            }
+            return ret;
+        }
     }
 }
