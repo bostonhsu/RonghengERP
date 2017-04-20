@@ -28,7 +28,13 @@ namespace WangNeedSearch
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ClearTreeView();
             Search();
+        }
+
+        private void ClearTreeView()
+        {
+            trvOrderDetail.Nodes.Clear();
         }
 
         private void SubForm2_Load(object sender, EventArgs e)
