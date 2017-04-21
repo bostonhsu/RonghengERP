@@ -491,7 +491,19 @@ namespace WangNeedSearch
 
         private void GetFactory()
         {
-            //throw new NotImplementedException();
+            string SQL = "SELECT MB001, MB002 FROM RHLX.dbo.CMSMB";
+            SqlDataAdapter objDataAdpter = new SqlDataAdapter();
+            objDataAdpter.SelectCommand = new SqlCommand(SQL, _sqlConnection);
+            DataSet ds = new DataSet();
+            objDataAdpter.Fill(ds, "temp");
+
+            DataTable dataTable = ds.Tables[0];
+            
+            DataView dataView = dataTable.DefaultView;
+            //dataView.Sort = "";
+            lstFactory.DataSource = dataView;
+            lstFactory.DisplayMember = "MB002";
+            lstFactory.ValueMember = "MB001";
         }
 
         private void ClearUIContent()
@@ -534,19 +546,15 @@ namespace WangNeedSearch
             string ret = null;
             try
             {
-                string SQL = "SELECT SUM(MOCTA.TA015) AS SUMTA, SUM(MOCTA.TA017) AS SUMTB FROM RHLX.dbo.MOCTA LEFT OUTER JOIN RHLX.dbo.COPTC ON (MOCTA.TA026 = COPTC.TC001 AND MOCTA.TA027 = COPTC.TC002) LEFT OUTER JOIN RHLX.dbo.COPMA ON COPTC.TC004 = COPMA.MA001 WHERE (MOCTA.TA011 <> 'Y') AND (MOCTA.TA011 <> 'y') AND (MOCTA.TA006 = '" + tuHao + "')";
+                //string SQL = "SELECT COP.品号, SUM(COP.需求1) 需求 FROM (SELECT TD004 AS 品号, SUM(TD008 - TD009) AS 需求1 from RHLX.dbo.COPTD WHERE TD016 = 'N' AND TD021 = 'Y' GROUP BY TD004 union SELECT TB003, SUM(TB004 - TB005) FROM RHLX.dbo.MOCTB WHERE TB004 - TB005 > 0 AND TB018 = 'Y' GROUP BY TB003) COP where COP.品号 = '" + tuHao + "' GROUP by 品号";
+                string SQL = "SELECT COP.品号, SUM(COP.需求1) 需求 FROM (SELECT TD004 AS 品号, SUM(TD008 - TD009) AS 需求1 from RHLX.dbo.COPTD WHERE TD016 = 'N' AND TD021 = 'Y' GROUP BY TD004 union SELECT TB003, SUM(TB004 - TB005) FROM RHLX.dbo.MOCTB WHERE TB004 - TB005 > 0 GROUP BY TB003) COP where COP.品号 = '" + tuHao + "' GROUP by 品号";
                 SqlDataAdapter objDataAdpter = new SqlDataAdapter();
                 objDataAdpter.SelectCommand = new SqlCommand(SQL, _sqlConnection);
                 DataSet ds = new DataSet();
                 objDataAdpter.Fill(ds, "temp");
                 if (ds.Tables[0].Rows.Count > 0 && !(string.IsNullOrEmpty(ds.Tables[0].Rows[0][0].ToString().Trim())))
                 {
-                    double sums;
-                    double factor;
-                    sums = Double.Parse(ds.Tables[0].Rows[0][0].ToString());
-                    factor = Double.Parse(ds.Tables[0].Rows[0][1].ToString());
-                    sums = sums - factor;
-                    ret = sums.ToString();
+                    ret = ds.Tables[0].Rows[0][1].ToString();
                 }
                 else
                 {
