@@ -59,7 +59,7 @@
             // txtOrderNumber
             // 
             this.txtOrderNumber.Location = new System.Drawing.Point(72, 14);
-            this.txtOrderNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOrderNumber.Margin = new System.Windows.Forms.Padding(2);
             this.txtOrderNumber.Name = "txtOrderNumber";
             this.txtOrderNumber.Size = new System.Drawing.Size(121, 21);
             this.txtOrderNumber.TabIndex = 1;
@@ -68,7 +68,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(197, 14);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 21);
             this.button1.TabIndex = 2;
@@ -79,7 +79,7 @@
             // trvOrderDetail
             // 
             this.trvOrderDetail.Location = new System.Drawing.Point(18, 44);
-            this.trvOrderDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trvOrderDetail.Margin = new System.Windows.Forms.Padding(2);
             this.trvOrderDetail.Name = "trvOrderDetail";
             this.trvOrderDetail.Size = new System.Drawing.Size(175, 270);
             this.trvOrderDetail.TabIndex = 3;
@@ -98,7 +98,7 @@
             // txtDetailCount
             // 
             this.txtDetailCount.Location = new System.Drawing.Point(364, 253);
-            this.txtDetailCount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDetailCount.Margin = new System.Windows.Forms.Padding(2);
             this.txtDetailCount.Name = "txtDetailCount";
             this.txtDetailCount.Size = new System.Drawing.Size(75, 21);
             this.txtDetailCount.TabIndex = 5;
@@ -108,7 +108,7 @@
             this.lstFactory.FormattingEnabled = true;
             this.lstFactory.ItemHeight = 12;
             this.lstFactory.Location = new System.Drawing.Point(202, 190);
-            this.lstFactory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstFactory.Margin = new System.Windows.Forms.Padding(2);
             this.lstFactory.Name = "lstFactory";
             this.lstFactory.Size = new System.Drawing.Size(101, 124);
             this.lstFactory.TabIndex = 6;
@@ -126,12 +126,13 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(372, 294);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(66, 20);
             this.button2.TabIndex = 8;
             this.button2.Text = "下单";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lblNotFound
             // 
@@ -174,7 +175,7 @@
             // txtZC
             // 
             this.txtZC.Location = new System.Drawing.Point(235, 42);
-            this.txtZC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtZC.Margin = new System.Windows.Forms.Padding(2);
             this.txtZC.Name = "txtZC";
             this.txtZC.Size = new System.Drawing.Size(75, 21);
             this.txtZC.TabIndex = 29;
@@ -182,7 +183,7 @@
             // txtXQ
             // 
             this.txtXQ.Location = new System.Drawing.Point(235, 71);
-            this.txtXQ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtXQ.Margin = new System.Windows.Forms.Padding(2);
             this.txtXQ.Name = "txtXQ";
             this.txtXQ.Size = new System.Drawing.Size(75, 21);
             this.txtXQ.TabIndex = 30;
@@ -190,7 +191,7 @@
             // txtKC
             // 
             this.txtKC.Location = new System.Drawing.Point(235, 101);
-            this.txtKC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtKC.Margin = new System.Windows.Forms.Padding(2);
             this.txtKC.Name = "txtKC";
             this.txtKC.Size = new System.Drawing.Size(75, 21);
             this.txtKC.TabIndex = 31;
