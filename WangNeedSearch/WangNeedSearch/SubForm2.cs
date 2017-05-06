@@ -44,6 +44,7 @@ namespace WangNeedSearch
             {
                 ConnectDb();
                 GetFactory();
+                SetLstDanBie();
             }
             catch (Exception ee)
             {
@@ -539,7 +540,104 @@ namespace WangNeedSearch
             txtZC.Text = GetZC(trvOrderDetail.SelectedNode.Text);
             txtKC.Text = GetKC(trvOrderDetail.SelectedNode.Text);
             txtXQ.Text = GetXQ(trvOrderDetail.SelectedNode.Text);
+            SetLstDanBieBySubItem();
         }
+
+        private void SetLstDanBieBySubItem()
+        {
+            try
+            {
+                ClearKongDanBie();
+                EnableXiaDan();
+                string SQL = "select MC005 from RHLX.dbo.BOMMC WHERE MC001 = '" + trvOrderDetail.SelectedNode.Text.Trim() + "'";
+                SqlDataAdapter objDataAdpter = new SqlDataAdapter();
+                objDataAdpter.SelectCommand = new SqlCommand(SQL, _sqlConnection);
+                DataSet ds = new DataSet();
+                objDataAdpter.Fill(ds, "temp");
+
+                DataTable dataTable = ds.Tables[0];
+                if (ds.Tables[0].Rows.Count < 1)
+                {
+                    //MessageBox.Show("Error: < 1.");
+                    DisableXiaDan();
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(ds.Tables[0].Rows[0][0].ToString().Trim()))
+                    {
+                        ShowKongDanBie();
+                    }
+                    else
+                    {
+                        ConfirmLstDanBieItem(ds.Tables[0].Rows[0][0].ToString().Trim());
+                    }
+                }
+                /*
+                DataView dataView = dataTable.DefaultView;
+                //dataView.Sort = "";
+                lstDanBie.DataSource = dataView;
+                lstDanBie.DisplayMember = "MQ002";
+                lstDanBie.ValueMember = "MQ001";
+                */
+            }
+            catch (Exception ee)
+            {
+                MessageBox.Show("SetLstDanBieBySubItem");
+            }
+        }
+
+        private void DisableXiaDan()
+        {
+            lstDanBie.Enabled = false;
+            btnXiaDan.Enabled = false;
+        }
+
+        private void EnableXiaDan()
+        {
+            lstDanBie.Enabled = true;
+            btnXiaDan.Enabled = true;
+        }
+
+        private void ClearKongDanBie()
+        {
+            lblKongDanBie.Visible = false;
+            lstDanBie.SelectedIndex = 0;
+        }
+
+        private void ConfirmLstDanBieItem(string v)
+        {
+            lstDanBie.SelectedValue = v;
+        }
+
+        private void ShowKongDanBie()
+        {
+            lblKongDanBie.Visible = true;
+        }
+
+        private void SetLstDanBie()
+        {
+            try
+            {
+                string SQL = "Select  DISTINCT MQ001,MQ002,MQ034 from RHLX.dbo.CMSMQ as CMSMQ Left join  RHLX.dbo.CMSMU as CMSMU on MQ001 = MU001 and MQ003 = MU002  WHERE MQ003 IN('51', '52')";
+                SqlDataAdapter objDataAdpter = new SqlDataAdapter();
+                objDataAdpter.SelectCommand = new SqlCommand(SQL, _sqlConnection);
+                DataSet ds = new DataSet();
+                objDataAdpter.Fill(ds, "temp");
+
+                DataTable dataTable = ds.Tables[0];
+                
+                DataView dataView = dataTable.DefaultView;
+                //dataView.Sort = "";
+                lstDanBie.DataSource = dataView;
+                lstDanBie.DisplayMember = "MQ002";
+                lstDanBie.ValueMember = "MQ001";
+            }
+            catch (Exception ee)
+            {
+                MessageBox.Show("SetLstDanBie");
+            }
+        }
+
 
         private string GetXQ(string tuHao)
         {
@@ -624,7 +722,48 @@ namespace WangNeedSearch
 
         private void button2_Click(object sender, EventArgs e)
         {
+            MakeSQLFirst();
+        }
 
+        private void MakeSQLFirst()
+        {
+            string ta001 = lstDanBie.SelectedValue.ToString();
+            string dateSQL = "Select CONVERT(varchar(100), GETDATE(), 112)";
+            string dateStr = "";
+            string serialSQL = "Select max(substring(TA002, 7, len(TA002))) from RHLX.dbo.MOCTA where substring(TA002, 0, 7) = '" + dateStr + "'";
+            string serialMaxPlus = "";
+            string ta002 = dateStr + serialMaxPlus;
+            string ta003 = dateStr.Substring(2);
+            string ta004 = "";
+            string ta005 = "";
+            string ta006 = trvOrderDetail.SelectedNode.Text;
+            string str007 = "select MB004 FROM RHLX.dbo.INVMB where MB001='" + ta006 + "'";
+            string ta007 = "";
+            string ta008 = "";
+
+
+            string firstSQL = "insert into MOCTA (TA001, TA002, ) VALUES ('" + ta001 + "', '" + ta002 + "', )";
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            // ta002
+            /*
+            string test = "002";
+            int temp = int.Parse(test);
+            temp++;
+
+            test = temp.ToString();
+            test = test.Trim();
+            test = String.Format("{0:D3}", temp);
+            */
+
+            // ta003
+            /*
+            string test = "20170512";
+            string temp = test.Substring(2);
+            */
+            MessageBox.Show(trvOrderDetail.SelectedNode.Text);
         }
     }
 }
