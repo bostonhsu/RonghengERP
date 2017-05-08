@@ -722,10 +722,10 @@ namespace WangNeedSearch
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MakeSQLFirst();
+            string firstSQL = MakeSQLFirst();
         }
 
-        private void MakeSQLFirst()
+        private string MakeSQLFirst()
         {
             string ta001 = lstDanBie.SelectedValue.ToString();
             string dateSQL = "Select CONVERT(varchar(100), GETDATE(), 112)";
@@ -762,6 +762,7 @@ namespace WangNeedSearch
             string ta027 = txtOrderNumber.Text.Substring(4, txtOrderNumber.TextLength - 4);
 
             string firstSQL = "insert into MOCTA (TA001, TA002, ) VALUES ('" + ta001 + "', '" + ta002 + "', )";
+            return firstSQL;
         }
 
         private void button2_Click_1(object sender, EventArgs e)
