@@ -740,7 +740,26 @@ namespace WangNeedSearch
             string str007 = "select MB004 FROM RHLX.dbo.INVMB where MB001='" + ta006 + "'";
             string ta007 = "";
             string ta008 = "";
+            string ta009 = ta003;
 
+            string ta011 = "1";
+            string ta012 = "";
+            string ta013 = "Y";
+            string ta014 = "";
+            string ta015 = txtDetailCount.Text.Trim();              // 这里必须确保只能输入数值。
+            string ta016 = "0";
+            string ta017 = "0";
+            string ta018 = "0";
+            string ta019 = lstFactory.SelectedValue.ToString();
+            string str02021 = "select MB017, MB068 FROM RHLX.dbo.INVMB where MB001='" + ta006 + "'";
+            string ta020 = "";  //MB017
+            string ta021 = "";  //MB068
+            string ta022 = "0";
+            string ta023 = "";
+            string ta024 = "";
+            string ta025 = "";
+            string ta026 = txtOrderNumber.Text.Substring(0, 4);
+            string ta027 = txtOrderNumber.Text.Substring(4, txtOrderNumber.TextLength - 4);
 
             string firstSQL = "insert into MOCTA (TA001, TA002, ) VALUES ('" + ta001 + "', '" + ta002 + "', )";
         }
@@ -763,7 +782,7 @@ namespace WangNeedSearch
             string test = "20170512";
             string temp = test.Substring(2);
             */
-            MessageBox.Show(trvOrderDetail.SelectedNode.Text);
+            MessageBox.Show(txtOrderNumber.Text.Substring(4, txtOrderNumber.TextLength - 4));
         }
     }
 }

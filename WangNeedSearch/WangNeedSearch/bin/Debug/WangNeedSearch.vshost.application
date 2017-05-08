@@ -11,14 +11,14 @@
     <deploymentProvider codebase="file://192.168.1.3/%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6/BostonHsu/WangNeedSearch.application" />
   </deployment>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="WangNeedSearch.exe.manifest" size="3457">
+    <dependentAssembly dependencyType="install" codebase="WangNeedSearch.exe.manifest" size="3422">
       <assemblyIdentity name="WangNeedSearch.exe" version="1.0.0.14" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>AFy4e8GMXAdFIWcLuvsHq/h7yGM=</dsig:DigestValue>
+        <dsig:DigestValue>NI70xpwEVyW9mtATv/9aYWKvRRs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
