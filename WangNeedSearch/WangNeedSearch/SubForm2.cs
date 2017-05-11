@@ -729,14 +729,54 @@ namespace WangNeedSearch
 
         private string MakeSQLThird()
         {
-            throw new NotImplementedException();
+            string bomName = trvOrderDetail.SelectedNode.Text;
+            string ta001 = ta001;
+            string ta002 = ta002;
+            string str003 = "select MF003 from MOCTA INNER JOIN BOMMF ON  where MF001 = '" + bomName + "'";
+            // figure 3
         }
 
         private string MakeSQLSecond()
         {
+            string bomName = trvOrderDetail.SelectedNode.Text;
             string tb001 = ta001;
             string tb002 = ta002;
+            string str003014 = "select MD003, MD001 from BOMMD WHERE MD001='" + bomName + "' and MD017 = '1'";
             string tb003 = "";
+            string str004027 = "select MC004, MD006, MD007, MD008 from BOMMC INNER JOIN BOMMD ON MC001 = MD001 where MC001='" + bomName + "' and MD003 ='" + tb003 + "'";
+            // formula
+            // figure 1
+            string tb004 = "";
+            string tb005 = "0";
+            string str006 = "select MD009 from BOMMD where MD001='" + bomName + "' and MD003 ='" + tb003 + "'";
+            string tb006 = "";
+            string str007 = "select MB004 from INVMB where MB001 = '" + tb003 + "'";
+            string tb007 = "";
+            string tb008 = "";
+            string tb009 = "";
+            string tb010 = "1";
+            string tb011 = "1";
+            string str012 = "select MB002 from INVMB where MB001='" + tb003 + "'";
+            string tb012 = "";
+            string str013 = "select MB003 from INVMB where MB001='" + tb003 + "'";
+            string tb013 = "";
+            string tb014 = "";
+            string tb015 = "Get datetime from server.";
+            string tb016 = "";
+            string tb017 = "";
+            string tb018 = "Y";
+            string tb019 = "0";
+            string tb020 = "0";
+            string tb021 = "";
+            string tb022 = "";
+            string tb023 = "";
+            string tb024 = "";
+            string tb025 = "0";
+            string tb026 = "0";
+            string tb027 = "";
+            // formula
+            // figure 2
+            string tbc02 = tb004;
 
             string secondSQL = "insert into MOCTB (TB001, TB002, ) VALUES ('" + tb001 + "', '" + tb002 + "', )";
             return secondSQL;
