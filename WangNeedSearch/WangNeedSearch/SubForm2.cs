@@ -73,7 +73,7 @@ namespace WangNeedSearch
         {
             try
             {
-                string SQL = "select TD004, TD008, TD009 from RHLX.dbo.COPTC left join RHLX.dbo.COPTD on TC001 = TD001 and TC002 = TD002 where TC001 = '" + preOrder + "' and TC002 = '" + order + "'";
+                string SQL = "select TD004, TD008, TD009, TD003 from RHLX.dbo.COPTC left join RHLX.dbo.COPTD on TC001 = TD001 and TC002 = TD002 where TC001 = '" + preOrder + "' and TC002 = '" + order + "'";
                 SqlDataAdapter objDataAdpter = new SqlDataAdapter();
                 objDataAdpter.SelectCommand = new SqlCommand(SQL, _sqlConnection);
                 DataSet ds = new DataSet();
@@ -100,7 +100,7 @@ namespace WangNeedSearch
                 {
                     treeNodes[i] = new TreeNode(dataTable.Rows[i][0].ToString().Trim());
                     treeNodes[i].Text = dataTable.Rows[i][0].ToString().Trim();
-                    treeNodes[i].Name = dataTable.Rows[i][0].ToString().Trim();
+                    treeNodes[i].Name = dataTable.Rows[i][3].ToString().Trim();
                 }
                 foreach (TreeNode treeNode in treeNodes)
                 {
@@ -723,6 +723,23 @@ namespace WangNeedSearch
         private void button2_Click(object sender, EventArgs e)
         {
             string firstSQL = MakeSQLFirst();
+            string secondSQL = MakeSQLSecond();
+            string thirdSQL = MakeSQLThird();
+        }
+
+        private string MakeSQLThird()
+        {
+            throw new NotImplementedException();
+        }
+
+        private string MakeSQLSecond()
+        {
+            string tb001 = ta001;
+            string tb002 = ta002;
+            string tb003 = "";
+
+            string secondSQL = "insert into MOCTB (TB001, TB002, ) VALUES ('" + tb001 + "', '" + tb002 + "', )";
+            return secondSQL;
         }
 
         private string MakeSQLFirst()
@@ -760,6 +777,58 @@ namespace WangNeedSearch
             string ta025 = "";
             string ta026 = txtOrderNumber.Text.Substring(0, 4);
             string ta027 = txtOrderNumber.Text.Substring(4, txtOrderNumber.TextLength - 4);
+            string ta028 = trvOrderDetail.SelectedNode.Name.ToString();
+            string ta029 = "";
+            string ta030 = "1";
+            string ta031 = "0";
+            string ta032 = "";
+            string ta033 = "";
+            string str034035 = "select MB002, MB003 FROM RHLX.dbo.INVMB where MB001='" + ta006 + "'";
+            string ta034035 = "";
+            string ta036 = "";
+            string ta037 = "";
+            string ta038 = "";
+            string ta039 = "";
+            string ta040 = dateStr;
+            string ta041 = "WCX";
+            string ta042 = "";
+            string ta043 = "0";
+            string ta044 = "N";
+            string ta045 = "0";
+            string ta046 = "0";
+            string ta047 = "0";
+            string ta048 = "";
+            string ta049 = "N";
+            string ta050 = "";
+            string ta051 = "";
+            string ta052 = "";
+            string ta053 = "";
+            string ta054 = "0";
+            string ta055 = "1";
+            string ta056 = "0";
+            string ta057 = "********************";
+            string ta058 = "";
+            string ta059 = "N";
+            string ta060 = "0";
+            string ta061 = "0";
+            string ta062 = "0";
+            string str063 = "select TD013 from RHLX.dbo.COPTC left join RHLX.dbo.COPTD on TC001 = TD001 and TC002 = TD002 where TC001 = '2201' and TC002 = '20130617001'";
+            string ta063 = "str063 - 1";
+            string str064 = "select MD015 FROM RHLX.dbo.INVMB INNER JOIN RHLX.dbo.CMSMD ON RHLX.dbo.INVMB.MB068 = RHLX.dbo.CMSMD.MD001 where MB001 = '101-427Q'";
+            string ta064 = "";
+            string ta065 = "";
+            string ta066 = "";
+            string ta067 = "";
+            string ta068 = "0";
+            string ta069 = "0";
+            string ta070 = "0";
+            string ta071 = "";
+            string ta072 = "0";
+            string ta073 = "";
+            string ta074 = "";
+            string ta075 = "";
+
+
 
             string firstSQL = "insert into MOCTA (TA001, TA002, ) VALUES ('" + ta001 + "', '" + ta002 + "', )";
             return firstSQL;
